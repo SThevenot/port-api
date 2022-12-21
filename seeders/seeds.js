@@ -1,8 +1,8 @@
 /** @format */
 const db = require("../config/connection");
 const { Project, Skill } = require("../models");
-const projectSeeds = require("./projectSeeds.json");
-const skillSeeds = require("./skillSeeds.json");
+const projectSeeds = require("./projectData.json");
+const skillSeeds = require("./skillData.json");
 
 db.once("open", async () => {
   await Skill.deleteMany({});

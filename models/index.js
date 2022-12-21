@@ -1,6 +1,6 @@
 /** @format */
 
 const Project = require("./Project");
-const Skill = require("./Skills");
+const Skill = require("./Skill");
 
 module.exports = { Project, Skill };
