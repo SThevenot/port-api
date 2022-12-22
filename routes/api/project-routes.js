@@ -3,11 +3,11 @@
 const router = require("express").Router();
 const {
   getProjects,
-  getProjectBySkill,
+  getProjectReact
 } = require("../../controllers/projectController");
 
 router.route("/").get(getProjects);
 
-router.route("/:skillId").get(getProjectBySkill);
+router.route("/React").get(getProjectReact);
 
 module.exports = router;

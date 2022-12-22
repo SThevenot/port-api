@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const {
   getSkills,
-} = require("../../controllers/projectController");
+} = require("../../controllers/skillController");
 
 router.route("/").get(getSkills);
 
