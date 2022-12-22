@@ -1,6 +1,6 @@
 /** @format */
 
-const { Project, Skill } = require("../models");
+const { Project } = require("../models");
 
 module.exports = {
   getProjects(req, res) {
@@ -9,7 +9,7 @@ module.exports = {
       .catch((err) => res.json(500).json(err));
   },
   getProjectReact(req, res) {
-    Project.find({ category: "React" })
+    Project.find({ $filter: category })
       .then((projects) => res.json(projects))
       .catch((err) => res.json(500).json(err));
   },
